@@ -161,5 +161,10 @@ session(['email' => $user->email]);
     
         return redirect()->back()->withErrors(['email' => 'Invalid credentials']);
     }
-    
+
+    public function logouts()
+    {
+        Auth::logout();
+        return redirect("/auth-user/login");
+    }
 }

@@ -17,9 +17,10 @@
 <body>
     @extends('layout.main')
 
+    
+
     @section('content')
-    <div class="container">
-    </div>
+    
         @endsection
     
 </body>

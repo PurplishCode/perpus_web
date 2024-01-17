@@ -47,3 +47,5 @@ Route::post("/users/create", [UserController::class, "create"]);
 // Route::resource("book", [BookController::class])->except(['show','edit','update','delete']);
 
 Route::get('/sidebar-ui', [AuthController::class, "sideview"]);
+
+Route::get("/logout", [UserController::class, "logouts"]);

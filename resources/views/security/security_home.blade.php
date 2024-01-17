@@ -12,5 +12,6 @@
 </head>
 <body>
     @extends('layout.main')
+    <a href="{{ url('/logout') }}" class="btn btn-primary">
 </body>
 </html>

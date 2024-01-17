@@ -2,12 +2,7 @@
    @include('layout.part.link')
    
    <style>
-    .datatest {
-        display: none;
-    }
-    .datatest.show {
-        display: block;
-    }
+ 
    </style>
 </head>
 
@@ -33,7 +28,8 @@
             <!-- Navigation for authenticated users -->
             @if (Auth::check())
                 <div class="px-4 py-1 mb-1">
-                  <div class="datatest text-white border-secondary"  ><img src="{{ asset('img/avatar-masyarakat.png') }}" style="width: 50px;height:50px;border-radius:15px"></div>
+                    <div class="btn btn-primary"><a href="{{ url("/logout") }}" class="text-white">LOGOUT</a></div>
+                  {{-- <div class="datatest text-white border-secondary"  ><img src="{{ asset('img/avatar-masyarakat.png') }}" style="width: 50px;height:50px;border-radius:15px"></div> --}}
                 </div>
             @else
                 <!-- Navigation for non-authenticated users -->
@@ -49,8 +45,6 @@
 
     <!-- Your JavaScript to handle the burger menu toggle -->
     <script>
-document.querySelector('#open-sidebar').addEventListener('click', function(){
-$(".datatest").toggleClass("show");
-}); 
+
     </script>
 </header>

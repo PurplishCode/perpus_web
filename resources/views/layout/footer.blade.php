@@ -6,7 +6,9 @@
             All Rights Reserved
         </p>
         <p class="mb-1">
-            Designed with <span style="color: purple;"> &hearts;</span> by PurpleCode
+            Designed with <span style="color: purple;"> &hearts;</span> by PurpleCode <div class="container">
+                <a href="{{ url("/logout") }}" class="btn btn-priamry bg-blue">LOGOUT
+            </div>
         </p>
         
     </div>
